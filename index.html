@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <script src="assets/js/jquery-3.2.1.js"></script>
+  <title>exojq2</title>
+</head>
+<body>
+  <form>
+    <button type="button" name="button" id="plus">+</button>
+    <button type="button" name="button" id="moins">-</button>
+    <input type="text" name="click" id="click"/>
+  </form>
+  <script>
+  var clicker = 0;
+  $('#plus').click(function() {
+    $('#click').val(++clicker);
+  });
+  $('#moins').click(function() {
+    $('#click').val(--clicker);
+  });
+  </script>
+</body>
+</html>
